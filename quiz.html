@@ -1,0 +1,475 @@
+<html>
+
+<head>
+    <title>
+        Pagina di roberto
+    </title>
+</head>
+
+<link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="C:\Users\Roberto\Desktop\programmazione\file css\quiz.css">
+<script src="C:\Users\Roberto\Desktop\programmazione\file javascript\quiz.js">
+</script>
+
+<body>
+
+
+    <h1> Bandiere </h1>
+    <h2> Quelle strane </h2>
+    <h3> Pronto ad indovinare le bandiere giuste? </h3>
+    <button id="domanda1" onclick="domanda('', true)"> SI </button> <br> <br>
+    <button id="domanda2" onclick="domanda('', false)"> NO </button> <br><br>
+    <strong> Prima di iniziare, prendi un foglietto e segna man mano ogni risposta GIUSTA che darai : </strong>
+    <h4> Bene, ecco una lista di 20 bandiere da indovinare : (CLICCA SUL PULSANTE CORRISPONDENTE ALLA RISPOSTA CHE PENSI
+        SIA GIUSTA) </h4> <br>
+    <ol>
+
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\somalia.jpg"> <br><br>
+        <ul>
+
+
+            <button id="ris1" onclick="risposta1()">
+                <li> Burundi </li>
+            </button> <br><br>
+            <button id="ris2" onclick="risposta2()">
+                <li> Sudan </li>
+            </button> <br><br>
+            <button id="ris3" onclick="risposta3()">
+                <li> Somalia </li>
+            </button> <br><br>
+            <button id="ris4" onclick="risposta4()">
+                <li> Tanzania </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\eswatini.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Angola', false)">
+                <li> Angola </li>
+            </button> <br><br>
+            <button onclick="quiz('Eswatini', true)">
+                <li> Eswatini </li>
+            </button> <br><br>
+            <button onclick="quiz('Comore', false)">
+                <li> Comore </li>
+            </button> <br><br>
+            <button onclick="quiz('Capo Verde', false)">
+                <li> Capo Verde </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\gibuti.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Tanzania', false)">
+                <li> Tanzania </li>
+            </button> <br><br>
+            <button onclick="quiz('Gibuti', true)">
+                <li> Gibuti </li>
+            </button> <br><br>
+            <button onclick="quiz('Ciad', false)">
+                <li> Ciad </li>
+            </button> <br><br>
+            <button onclick="quiz('Mauritania', false)">
+                <li> Mauritania </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\comore.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Burundi', false)">
+                <li> Burundi </li>
+            </button> <br><br>
+            <button onclick="quiz('Camerun', false)">
+                <li> Camerun </li>
+            </button> <br><br>
+            <button onclick="quiz('Libia', false)">
+                <li> Libia </li>
+            </button> <br><br>
+            <button onclick="quiz('Comore', true)">
+                <li> Comore </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\haiti.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Santo Domingo', false)">
+                <li> Santo Domingo </li>
+            </button> <br><br>
+            <button onclick="quiz('Haiti', true)">
+                <li> Haiti </li>
+            </button> <br><br>
+            <button onclick="quiz('Panama', false)">
+                <li> Panama </li>
+            </button> <br><br>
+            <button onclick="quiz('Guatemala', false)">
+                <li> Guatemala </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\pakistan.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Pakistan', true)">
+                <li> Pakistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Bangladesh', false)">
+                <li> Bangladesh </li>
+            </button> <br><br>
+            <button onclick="quiz('Nepal', false)">
+                <li> Nepal </li>
+            </button> <br><br>
+            <button onclick="quiz('Sri Lanka', false)">
+                <li> Sri Lanka </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\seychelles.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Malawi', false)">
+                <li> Malawi </li>
+            </button> <br><br>
+            <button onclick="quiz('Sudan', false)">
+                <li> Sudan </li>
+            </button> <br><br>
+            <button onclick="quiz('Ruanda', false)">
+                <li> Ruanda </li>
+            </button> <br><br>
+            <button onclick="quiz('Seychelles', true)">
+                <li> Seychelles </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\grenada.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Cuba', false)">
+                <li> Cuba </li>
+            </button> <br><br>
+            <button onclick="quiz('Panama', false)">
+                <li> Panama </li>
+            </button> <br><br>
+            <button onclick="quiz('Grenada', true)">
+                <li> Grenada </li>
+            </button> <br><br>
+            <button onclick="quiz('Haiti', false)">
+                <li> Haiti </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\belize.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Belize', true)">
+                <li> Belize </li>
+            </button> <br><br>
+            <button onclick="quiz('Bahamas', false)">
+                <li> Bahamas </li>
+            </button> <br><br>
+            <button onclick="quiz('Porto Rico', false)">
+                <li> Porto Rico </li>
+            </button> <br><br>
+            <button onclick="quiz('El Salvador', false)">
+                <li> El Salvador </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\bhutan.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Panama', false)">
+                <li> Panama </li>
+            </button> <br><br>
+            <button onclick="quiz('Bhutan', true)">
+                <li> Bhutan </li>
+            </button> <br><br>
+            <button onclick="quiz('Isole Cayman', false)">
+                <li> Isole Cayman </li>
+            </button> <br><br>
+            <button onclick="quiz('Guatemala', false)">
+                <li> Guatemala </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\nicaragua.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Nepal', false)">
+                <li> Nepal </li>
+            </button> <br><br>
+            <button onclick="quiz('Groenlandia', false)">
+                <li> Groenlandia </li>
+            </button> <br><br>
+            <button onclick="quiz('Nicaragua', true)">
+                <li> Nicaragua </li>
+            </button> <br><br>
+            <button onclick="quiz('Bermuda', false)">
+                <li> Bermuda </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\nepal.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Nepal', true)">
+                <li> Nepal </li>
+            </button> <br><br>
+            <button onclick="quiz('Pakistan', false)">
+                <li> Pakistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Turchia', false)">
+                <li> Turchia </li>
+            </button> <br><br>
+            <button onclick="quiz('Algeria', false)">
+                <li> Algeria </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\tonga.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Turkmenistan', false)">
+                <li> Turkmenistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Isole Bermuda', false)">
+                <li> Isole Bermuda </li>
+            </button> <br><br>
+            <button onclick="quiz('Bangladesh', false)">
+                <li> Bangladesh </li>
+            </button> <br><br>
+            <button onclick="quiz('Tonga', true)">
+                <li> Tonga </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\zimbabwe.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Marocco', false)">
+                <li> Marocco </li>
+            </button> <br><br>
+            <button onclick="quiz('Algeria', false)">
+                <li> Algeria </li>
+            </button> <br><br>
+            <button onclick="quiz('Zimbabwe', true)">
+                <li> Zimbabwe </li>
+            </button> <br><br>
+            <button onclick="quiz('Congo', false)">
+                <li> Congo </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\dominica.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Isole Cayman', false)">
+                <li> Isole Cayman </li>
+            </button> <br><br>
+            <button onclick="quiz('Dominica', true)">
+                <li> Dominica </li>
+            </button> <br><br>
+            <button onclick="quiz('Bhutan', false)">
+                <li> Bhutan </li>
+            </button> <br><br>
+            <button onclick="quiz('Algeria', false)">
+                <li> Algeria </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\mali.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Nicaragua', false)">
+                <li> Nicaragua </li>
+            </button> <br><br>
+            <button onclick="quiz('Pakistan', false)">
+                <li> Pakistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Cuba', false)">
+                <li> Cuba </li>
+            </button> <br><br>
+            <button onclick="quiz('Mali', true)">
+                <li> Mali </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\mozambico.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Mozambico', true)">
+                <li> Mozambico </li>
+            </button> <br><br>
+            <button onclick="quiz('Lesotho', false)">
+                <li> Lesotho </li>
+            </button> <br><br>
+            <button onclick="quiz('Madagascar', false)">
+                <li> Madagascar </li>
+            </button> <br><br>
+            <button onclick="quiz('Congo', false)">
+                <li> Congo </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\uganda.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Eswatini', false)">
+                <li> Eswatini </li>
+            </button> <br><br>
+            <button onclick="quiz('Uganda', true)">
+                <li> Uganda </li>
+            </button> <br><br>
+            <button onclick="quiz('Marocco', false)">
+                <li> Marocco </li>
+            </button> <br><br>
+            <button onclick="quiz('Libia', false)">
+                <li> Libia </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\kirghizistan.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Uzbekistan', false)">
+                <li> Uzbekistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Kazakistan', false)">
+                <li> Kazakistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Kirghizistan', true)">
+                <li> Kirghizistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Afghanistan', false)">
+                <li> Afghanistan </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+        <div>
+            <li> Di che nazione e' la seguente bandiera?
+        </div><br><br>
+        <img src="C:\Users\Roberto\Desktop\programmazione\foto\turkmenistan.jpg"> <br><br>
+        <ul>
+            <button onclick="quiz('Kazakistan', false)">
+                <li> Kazakistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Algeria', false)">
+                <li> Algeria </li>
+            </button> <br><br>
+            <button onclick="quiz('Turkmenistan', true)">
+                <li> Turkmenistan </li>
+            </button> <br><br>
+            <button onclick="quiz('Libia', false)">
+                <li> Libia </li>
+            </button> <br><br>
+        </ul>
+        <br>
+        </li>
+    </ol>
+    <br>
+    <span class="punteggio"> Bene, ora clicca sul punteggio da te realizzato : </span> <br>
+    <ul>
+
+        <button id="pri" onclick="abc1()">
+            <li> Da 0 a 5 </li>
+        </button> <br> <br>
+        <button id="sec" onclick="abc2()">
+            <li> Da 6 a 11 </li>
+        </button> <br> <br>
+        <button id="ter" onclick="abc3()">
+            <li> Da 11 a 15 </li>
+        </button> <br> <br>
+        <button id="qua" onclick="abc4()">
+            <li> Da 16 a 20 </li>
+        </button> <br> <br>
+    </ul>
+    <br><br><br>
+
+
+    <span class="punteggio">
+        <script> totalizzato2() </script>
+    </span>
+    <br>
+
+    <button id="cambiainrosso" onclick="ciao2()"> Se mi clicchi, divento rosso </button>
+    <br>
+    <button id="scrittaverde" onclick="colVerde()"> Se mi clicchi, cambiero' la scritta in verde </button>
+    <br> <br>
+    <p class="lead text-primary"> prova vediamo </p>
+    <button class="bg-primary text-white"> bottone </button> <br>
+    <button class="btn btn-danger"> Confermi? </button> <br>
+    <button class="btn btn-success"> Conferma acquisto </button> <br>
+    <button class="btn btn-sm"> Small </button> <br>
+    <button class="btn btn-lg"> Large </button> <br>
+    <button class="btn btn-primary"> Primary </button> <br>
+    <button class="btn btn-secondary"> Secondary </button> <br>
+    <button class="btn btn-info"> Info </button> <br>
+    <button class="btn btn-dark"> Dark </button> <br>
+    <br> <br>
+    <button onclick="immagine2()"> ciao </button>
+    <br>
+    <img src="C:\Users\Roberto\Desktop\programmazione\foto\comore.jpg">
+</body>
+
+</html>
